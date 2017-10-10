@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shubham.environmentsensor.MainActivity">
+
+    <TextView
+        android:id="@+id/A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="106dp"
+        android:text="Accel"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/P"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/A"
+        android:layout_below="@+id/A"
+        android:layout_marginTop="38dp"
+        android:text="Prox"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/T"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/P"
+        android:layout_below="@+id/P"
+        android:layout_marginTop="41dp"
+        android:text="Temperature"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/H"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:text="Humidity"
+        android:textSize="20sp"
+        android:layout_below="@+id/T"
+        android:layout_alignStart="@+id/T" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/H"
+        android:layout_marginTop="62dp"
+        android:layout_toEndOf="@+id/P"
+        android:text="graph" />
+
+</RelativeLayout>
+
+
+
+
